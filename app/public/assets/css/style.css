@@ -9,24 +9,32 @@
 }
 
 body {
-  background-image: url(../images/background.jpg);
-  background-size: 100vw auto;
-  background-repeat: cover;
   font-family: bodyFont;
+  background-color:lightblue;
 }
 
 #home {
-  margin-top:10vh;
   text-align: center;
-
+  background-image: url(../images/background.jpg);
+  background-size: 100vw auto;
+  background-repeat: cover;
+  min-height: 100vh;
 }
 
 .logoStyles {
+  padding-top:10vh;
   font-family: logoFont;
   font-weight: bold;
   font-size:7em;
   color: cornflowerblue;
   text-shadow: 5px 3px black;
+}
+
+.subLogo {
+  font-weight:bold;
+  font-size:5em;
+  color:white;
+  text-shadow: 3px 2px black;
 }
 
 .mainBody {
@@ -38,6 +46,13 @@ body {
   opacity:.85;
 }
 
+.cstBtn {
+  font-weight: bold;
+  font-size:.75em;
+  color: white;
+  margin-bottom: 2vh;
+}
+
 footer{
   position: fixed;
   bottom:0;
@@ -47,4 +62,40 @@ footer{
   background-color:lightgray;
   opacity:.9;
   padding-right:7vw;
+}
+
+#survey {
+  text-align:center;
+  height:auto;
+}
+
+#surveyBody {
+  width:80vw;
+  height:auto;
+  min-height: 80vh;
+  background-color:white;
+  color:black;
+  margin:auto;
+  margin-bottom: 15vh;
+  padding-top:15vh;
+}
+
+.surveyHeader {
+  font-weight: bold;
+  font-size:3em;
+}
+
+.surveyHeader2 {
+  font-weight: bold;
+  font-size:2em;
+}
+
+#infoRow {
+  margin-top:10vh;
+  margin-bottom:10vh;
+}
+
+.question {
+  margin-top:7vh;
+  margin-bottom:7vh;
 }

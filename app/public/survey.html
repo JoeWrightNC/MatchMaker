@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Community</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">  
+  <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+  <section id=survey>
+    <h1 class="logoStyles">(My Community)</h1>
+    <h2 class="subLogo">Community Survey</h2>
+    <div id="surveyBody">
+        <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div id="mainpanel-content">
+                  <h1 class="surveyHeader">Your Information</h1>
+                  <div class="row" id="infoRow">
+                    <div class="col-6">
+                      <h5 class="surveyHeader2">Name (Required)</h5>
+                      <input type="text" class="formData" placeholder="Your Name Here" id="userName">
+                    </div>
+                    <div class="col-6">
+                      <h5 class="surveyHeader2">Link to Photo Image (Required)</h5>
+                      <input type="text" class="formData" placeholder="Photo Link Here" id="userPhoto">
+                    </div>
+                  </div>
+      
+                  <!-- Survey Questions -->
+                  <h1 class="surveyHeader">Survey Questions</h1>
+                  <div class="question">
+                    <h3 class="surveyHeader2">Question 1</h3>
+                    <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
+                    <select id="question1">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                  </div>
+      
+                  <div class="question">
+                    <h3 class="surveyHeader2">Question 2</h3>
+                    <h5>Generally speaking, you rely more on your experience than your imagination.</h5>
+                    <select id="question2">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                  </div>
+      
+                  <div class="question">
+                    <h3 class="surveyHeader2">Question 3</h3>
+                    <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
+                    <select id="question3">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                  </div>
+      
+                  <div class="question">
+                    <h3 class="surveyHeader2">Question 4</h3>
+                    <h5>You rarely do something just out of sheer curiosity.</h5>
+                    <select id="question4">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                  </div>
+      
+                  <div class="question">
+                    <h3 class="surveyHeader2">Question 5</h3>
+                    <h5>People can rarely upset you.</h5>
+                    <select id="question5">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                  </div>
+      
+                  <div class="question">
+                    <h3 class="surveyHeader2">Question 6</h3>
+                    <h5>It is often difficult for you to relate to other people’s feelings.</h5>
+                    <select id="question6">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                  </div>
+      
+                  <div class="question">
+                    <h3 class="surveyHeader2">Question 7</h3>
+                    <h5>In a discussion, truth should be more important than people’s sensitivities.</h5>
+                    <select id="question7">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                  </div>
+      
+                  <div class="question">
+                    <h3 class="surveyHeader2">Question 8</h3>
+                    <h5>You rarely get carried away by fantasies and ideas.</h5>
+                    <select id="question8">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                  </div>
+      
+                  <div class="question">
+                    <h3 class="surveyHeader2">Question 9</h3>
+                    <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
+                    <select id="question9">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                  </div>
+      
+                  <div class="question">
+                    <h3 class="surveyHeader2">Question 10</h3>
+                    <h5>You feel more energetic after spending time with a group of people.</h5>
+                    <select id="question10">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                  </div>
+                  <div>
+                    <button type="button" class="btn btn-info cstBtn" id="surveyBtn">Submit Survey</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+  </section>
+  <footer>
+    <span>
+      <a href="www.google.com">API Friends List</a>
+      ||
+      <a href="www.google.com">Github Repo</a>
+    </span>
+  </footer>
+  
+</body>
+
+</html>

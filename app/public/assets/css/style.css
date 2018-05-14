@@ -1,0 +1,50 @@
+@font-face {
+  font-family: logoFont;
+  src: url(../fonts/Logo.ttf);
+}
+
+@font-face {
+  font-family: bodyFont;
+  src: url(../fonts/bodyFont.ttf)
+}
+
+body {
+  background-image: url(../images/background.jpg);
+  background-size: 100vw auto;
+  background-repeat: cover;
+  font-family: bodyFont;
+}
+
+#home {
+  margin-top:10vh;
+  text-align: center;
+
+}
+
+.logoStyles {
+  font-family: logoFont;
+  font-weight: bold;
+  font-size:7em;
+  color: cornflowerblue;
+  text-shadow: 5px 3px black;
+}
+
+.mainBody {
+  font-weight: bold;
+  font-size:2em;
+  color: black;
+  text-shadow: 2px 2px white;
+  background:lightblue;
+  opacity:.85;
+}
+
+footer{
+  position: fixed;
+  bottom:0;
+  text-align:right;
+  width:100vw;
+  font-size: 1.5em;
+  background-color:lightgray;
+  opacity:.9;
+  padding-right:7vw;
+}

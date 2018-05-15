@@ -16,8 +16,9 @@ module.exports = function(app) {
       matchPhoto: ""
     }
     let masterMatchValue = 1000
+    let matchValue = 0 
     console.log(userAnswers)
-    friendsArr.forEach(element => {
+    friends.forEach(element => {
       for (let i=0; i<10; i++) {
         matchValue += Math.abs(element.scores[i] - userAnswers[i])
       }
@@ -29,7 +30,7 @@ module.exports = function(app) {
         }
       }
     });
-    friendsArr.push(newFriend)
+    friends.push(newFriend)
     res.json(match)
   });
 }

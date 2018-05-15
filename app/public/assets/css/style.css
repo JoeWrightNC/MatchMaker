@@ -99,3 +99,39 @@ footer{
   margin-top:7vh;
   margin-bottom:7vh;
 }
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw; 
+  height: 100vb; 
+  overflow: auto; 
+  background-color: lightblue;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: white;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%; 
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

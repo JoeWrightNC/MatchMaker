@@ -168,7 +168,6 @@
             </div>
           </div>
     </div>
-    
   </section>
   <footer>
     <span>
@@ -177,7 +176,58 @@
       <a href="www.google.com">Github Repo</a>
     </span>
   </footer>
+  <div id="resultsModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h1>Your New Friend!</h4>
+      <h2 id="userMatch"></h5>
+      <img id="userMatchPhoto" width="650" src="">
+      </div>
+    </div>
   
 </body>
+<script type="text/javascript">
+const modal = document.getElementById("resultsModal");
+const btn = document.getElementById("surveyBtn");
+const span = document.getElementsByClassName("close") [0];
+
+btn.onclick = function() {
+  event.preventDefault();
+
+  const userData = {
+    name: $("#userName").val().trim(),
+    photo: $("#userPhoto").val().trim(),
+    scores: [
+      $("#question1").val().trim(),
+      $("#question2").val().trim(),
+      $("#question3").val().trim(),
+      $("#question4").val().trim(),
+      $("#question5").val().trim(),
+      $("#question6").val().trim(),
+      $("#question7").val().trim(),
+      $("#question8").val().trim(),
+      $("#question9").val().trim(),
+      $("#question10").val().trim(),
+    ]
+  }
+
+  $.post("/api/friends", userData)
+  .done(function(results) {
+    $("#userMatch").html(results.matchName);
+    $("#userMatchPhoto").attr("src", results.matchPhoto);
+    modal.style.display = "block"
+  })
+}
+
+span.onclick = function() {
+  modal.style.display = "none"
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 </html>

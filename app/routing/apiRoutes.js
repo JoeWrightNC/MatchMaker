@@ -1,36 +1,32 @@
 const friends = require("../data/friends.js");
 
 module.exports = function(app) {
-
   //routing for api get endpoint
   app.get("/api/friends", function (req, res) {
     return res.json(friends);
   });
 
-  //routing for api post endpoint
+  //routing for api post endpoint, logic for matching
   app.post("/api/friends", function (req, res) {
     const newFriend = req.body;
     const userAnswers = newFriend.scores
-    let match = {
-      matchName: "",
-      matchPhoto: ""
-    }
-    let masterMatchValue = 1000
-    let matchValue = 0 
-    console.log(userAnswers)
+    const scoresArr = [];
+    const friendCount = 0;
+    let masterMatch = 0;
     friends.forEach(element => {
-      for (let i=0; i<10; i++) {
-        matchValue += Math.abs(element.scores[i] - userAnswers[i])
-      }
-      if (matchValue < masterMatchValue) {
-        masterMatchValue = matchValue;
-        match = {
-          matchName: element.name,
-          matchPhoto: element.photo,
-        }
-      }
+      let matchValue = 0;
+      userAnswers.forEach(datum => {
+        matchValue += (Math.abs(parseInt(element.scores[datum]) - parseInt(userAnswers[datum])))
+      })
+      scoresArr.push(matchValue)
     });
+    scoresArr.forEach(matchScore => {
+      if (matchScore <= scoresArr[masterMatch]) {
+        masterMatch = scoresArr.indexOf(matchScore)
+      }
+    })
+    let finalMatch = friends[masterMatch]
+    res.json(finalMatch)
     friends.push(newFriend)
-    res.json(match)
   });
 }

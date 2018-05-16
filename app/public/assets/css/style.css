@@ -1,6 +1,6 @@
 @font-face {
   font-family: logoFont;
-  src: url(../fonts/Logo.ttf);
+  src: url(../fonts/logoFont.otf);
 }
 
 @font-face {
@@ -23,10 +23,10 @@ body {
 
 .logoStyles {
   padding-top:10vh;
+  padding-bottom:10vh;
   font-family: logoFont;
-  font-weight: bold;
-  font-size:7em;
-  color: cornflowerblue;
+  font-size:6em;
+  color: white;
   text-shadow: 5px 3px black;
 }
 
@@ -46,11 +46,13 @@ body {
   opacity:.85;
 }
 
+
 .cstBtn {
   font-weight: bold;
   font-size:.75em;
   color: white;
   margin-bottom: 2vh;
+  opacity: 1;
 }
 
 footer{
@@ -114,11 +116,18 @@ footer{
 
 /* Modal Content/Box */
 .modal-content {
+  text-align:center;
   background-color: white;
   margin: 15% auto; 
   padding: 20px;
   border: 1px solid #888;
   width: 70%; 
+}
+
+#userMatchPhoto {
+  width:30vw;
+  height:auto;
+  margin:auto;
 }
 
 /* The Close Button */

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Community</title>
+    <title>My Tech Community</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">  
   <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 <body>
   <section id=survey>
-    <h1 class="logoStyles">(My Community)</h1>
+    <h1 class="logoStyles">My Tech Community</h1>
     <h2 class="subLogo">Community Survey</h2>
     <div id="surveyBody">
         <div class="container">
@@ -33,7 +33,7 @@
                   <h1 class="surveyHeader">Survey Questions</h1>
                   <div class="question">
                     <h3 class="surveyHeader2">Question 1</h3>
-                    <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
+                    <h5>You find it difficult to introduce yourself to other people.</h5>
                     <select id="question1">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">1 (Strongly Disagree)</option>
@@ -46,7 +46,7 @@
       
                   <div class="question">
                     <h3 class="surveyHeader2">Question 2</h3>
-                    <h5>Generally speaking, you rely more on your experience than your imagination.</h5>
+                    <h5>You often get so lost in your thoughts that you ignore or forget your surroundings.</h5>
                     <select id="question2">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">1 (Strongly Disagree)</option>
@@ -59,7 +59,7 @@
       
                   <div class="question">
                     <h3 class="surveyHeader2">Question 3</h3>
-                    <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
+                    <h5>You try to response to your e-mails as soon as possible and can't stand a messy inbox.</h5>
                     <select id="question3">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">1 (Strongly Disagree)</option>
@@ -72,7 +72,7 @@
       
                   <div class="question">
                     <h3 class="surveyHeader2">Question 4</h3>
-                    <h5>You rarely do something just out of sheer curiosity.</h5>
+                    <h5>You find it easy to stay relaxed even when there is some pressure.</h5>
                     <select id="question4">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">1 (Strongly Disagree)</option>
@@ -85,7 +85,7 @@
       
                   <div class="question">
                     <h3 class="surveyHeader2">Question 5</h3>
-                    <h5>People can rarely upset you.</h5>
+                    <h5>Winning a debate matters less to you than making sure no one gets upset.</h5>
                     <select id="question5">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">1 (Strongly Disagree)</option>
@@ -98,7 +98,7 @@
       
                   <div class="question">
                     <h3 class="surveyHeader2">Question 6</h3>
-                    <h5>It is often difficult for you to relate to other people’s feelings.</h5>
+                    <h5>You often feel as if you have to justify yourself to other people.</h5>
                     <select id="question6">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">1 (Strongly Disagree)</option>
@@ -111,7 +111,7 @@
       
                   <div class="question">
                     <h3 class="surveyHeader2">Question 7</h3>
-                    <h5>In a discussion, truth should be more important than people’s sensitivities.</h5>
+                    <h5>You do not mind being at the center of attention.</h5>
                     <select id="question7">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">1 (Strongly Disagree)</option>
@@ -124,7 +124,7 @@
       
                   <div class="question">
                     <h3 class="surveyHeader2">Question 8</h3>
-                    <h5>You rarely get carried away by fantasies and ideas.</h5>
+                    <h5>Your travel plans are usually well thought out.</h5>
                     <select id="question8">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">1 (Strongly Disagree)</option>
@@ -137,7 +137,7 @@
       
                   <div class="question">
                     <h3 class="surveyHeader2">Question 9</h3>
-                    <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
+                    <h5>Your mood can change very quickly.</h5>
                     <select id="question9">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">1 (Strongly Disagree)</option>
@@ -150,7 +150,7 @@
       
                   <div class="question">
                     <h3 class="surveyHeader2">Question 10</h3>
-                    <h5>You feel more energetic after spending time with a group of people.</h5>
+                    <h5>An interesting book or a video game is often better than a social event.</h5>
                     <select id="question10">
                       <option value="" disabled selected>Choose your option</option>
                       <option value="1">1 (Strongly Disagree)</option>
@@ -171,17 +171,17 @@
   </section>
   <footer>
     <span>
-      <a href="www.google.com">API Friends List</a>
+      <a href="/api/friends">API Friends List</a>
       ||
-      <a href="www.google.com">Github Repo</a>
+      <a href="https://github.com/JoeWrightNC/MatchMaker">Github Repo</a>
     </span>
   </footer>
   <div id="resultsModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h1>Your New Friend!</h4>
-      <h2 id="userMatch"></h5>
-      <img id="userMatchPhoto" width="650" src="">
+      <strong><h1>Your New Friend:</h1></strong>
+      <h2 id="userMatch"></h2>
+      <img id="userMatchPhoto" width="30vw" src="">
       </div>
     </div>
   
@@ -213,19 +213,21 @@ btn.onclick = function() {
 
   $.post("/api/friends", userData)
   .done(function(results) {
-    $("#userMatch").html(results.matchName);
-    $("#userMatchPhoto").attr("src", results.matchPhoto);
+    $("#userMatch").html(results.name);
+    $("#userMatchPhoto").attr("src", results.photo);
     modal.style.display = "block"
   })
 }
 
 span.onclick = function() {
   modal.style.display = "none"
+  window.open("/")
 }
 
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        window.open("/")
     }
 }
 </script>
